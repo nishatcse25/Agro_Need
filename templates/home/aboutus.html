@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>♣ Team ♣</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'customer/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'home/aboutus.css' %}">
+
+</head>
+
+<body>
+
+    <!-- Start: sticky dark top nav with dropdown -->
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="background: linear-gradient(rgb(21,95,2), rgb(241,232,14));width: 100%;height: 93px;">
+        <div class="container">
+            <div><a class="navbar-brand" href="#"><span><img src="{% static 'customer/agroneedlogo.png' %}" style="width: 200px;"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}"><i class="fa fa-user-circle"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'customerregistration' %}"><i class="fa fa-user-circle"></i>Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'sellerregistration' %}"><i class="fa fa-user-circle"></i>Seller</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'aboutus' %}"><i class="fa fa-user-secret" style="height: 1px;"></i>About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: sticky dark top nav with dropdown -->
+
+    <!-- Start: ♣ Team Rotating Cards BS4 ♣ -->
+    <section class="py-5"
+        style="background: url({% static 'home/mario run.gif' %}) center / cover no-repeat;">
+        <!-- Start: H1 -->
+        <h1 class="text-center text-uppercase">Our team</h1><!-- End: H1 -->
+        <!-- Start: H2 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <!-- Start: card container -->
+                    <div class="card-container-imagia">
+                        <!-- Start: card -->
+                        <div class="card-imagia">
+                            <!-- Start: front -->
+                            <div class="front-imagia">
+                                <!-- Start: cover image -->
+                                <div class="cover-imagia"><img class="w-100" alt=""
+                                        src="https://unsplash.it/720/500?image=1067"></div><!-- End: cover image -->
+                                <!-- Start: user image -->
+                                <div class="user-imagia"><img class="rounded-circle" alt=""
+                                        src="{% static 'home/about-img.jpg' %}"></div><!-- End: user image -->
+                                <!-- Start: texte -->
+                                <div class="py-1 px-3 text-center">
+                                    <h5 class="text-capitalize m-0">Ashraful Haque</h5>
+                                    <p class="text-secondary mb-3">18201079</p>
+                                    <p><em>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde
+                                            etiam quantum ille quem diligas atque adiuves. </em></p>
+                                </div><!-- End: texte -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <span><i class="fa fa-plus"></i> More info</span>
+                                </div><!-- End: footer -->
+                            </div><!-- End: front -->
+                            <!-- Start: back -->
+                            <div class="back-imagia">
+                                <!-- Start: content -->
+                                <div class="d-flex align-items-center h-100 px-3">
+                                    <div>
+                                        <h3 class="text-center">Lorem Ipsum</h3>
+                                        <p class="text-center">Et hanc quidem praeter oppida multa duae civitates
+                                            exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam
+                                            Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut
+                                            rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat
+                                            admodum pauca. </p>
+                                    </div>
+                                </div><!-- End: content -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <!-- Start: icons -->
+                                    <div class="social-imagia text-center"><a class="m-2" href="#"><i
+                                                class="fa fa-facebook"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-linkedin"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-twitter"></i></a></div><!-- End: icons -->
+                                </div><!-- End: footer -->
+                            </div><!-- End: back -->
+                        </div><!-- End: card -->
+                    </div><!-- End: card container -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- Start: card container -->
+                    <div class="card-container-imagia">
+                        <!-- Start: card -->
+                        <div class="card-imagia">
+                            <!-- Start: front -->
+                            <div class="front-imagia">
+                                <!-- Start: cover gradient -->
+                                <div class="cover-imagia cover-gradient"></div><!-- End: cover gradient -->
+                                <!-- Start: user image -->
+                                <div class="user-imagia"><img class="rounded-circle" alt="" src="{% static 'home/nishat.jpg' %}">
+                                </div><!-- End: user image -->
+                                <!-- Start: Texte -->
+                                <div class="py-1 px-3 text-center">
+                                    <h3 class="text-capitalize m-0">Nishat Shahrin</h3>
+                                    <p class="text-secondary mb-3">18201084</p>
+                                    <p><em>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde
+                                            etiam quantum ille quem diligas atque adiuves. </em></p>
+                                </div><!-- End: texte -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <span><i class="fa fa-plus"></i> More info</span>
+                                </div><!-- End: footer -->
+                            </div><!-- End: front -->
+                            <!-- Start: back -->
+                            <div class="back-imagia">
+                                <!-- Start: content -->
+                                <div class="d-flex align-items-center h-100 px-3">
+                                    <div>
+                                        <h3 class="text-center">Lorem Ipsum</h3>
+                                        <p class="text-center">Et hanc quidem praeter oppida multa duae civitates
+                                            exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam
+                                            Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut
+                                            rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat
+                                            admodum pauca. </p>
+                                    </div>
+                                </div><!-- End: content -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <!-- Start: icons -->
+                                    <div class="social-imagia text-center"><a class="m-2" href="#"><i
+                                                class="fa fa-facebook"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-linkedin"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-twitter"></i></a></div><!-- End: icons -->
+                                </div><!-- End: footer -->
+                            </div><!-- End: back -->
+                        </div><!-- End: card -->
+                    </div><!-- End: card container -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- Start: card container -->
+                    <div class="card-container-imagia">
+                        <!-- Start: card -->
+                        <div class="card-imagia">
+                            <!-- Start: front -->
+                            <div class="front-imagia">
+                                <!-- Start: cover image -->
+                                <div class="cover-imagia"><img class="w-100" alt=""
+                                        src="https://unsplash.it/720/500?image=1067"></div><!-- End: cover image -->
+                                <!-- Start: user image -->
+                                <div class="user-imagia"><img class="rounded-circle" alt="" src="{% static 'home/nipa.jpg' %}">
+                                </div>
+                                <!-- End: user image -->
+                                <!-- Start: texte -->
+                                <div class="py-1 px-3 text-center">
+                                    <h5 class="text-capitalize m-0">Sheikh Nipa</h5>
+                                    <p class="text-secondary mb-3">18201091</p>
+                                    <p><em>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde
+                                            etiam quantum ille quem diligas atque adiuves. </em></p>
+                                </div><!-- End: texte -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <span><i class="fa fa-plus"></i> More info</span>
+                                </div><!-- End: footer -->
+                            </div><!-- End: front -->
+                            <!-- Start: back -->
+                            <div class="back-imagia">
+                                <!-- Start: content -->
+                                <div class="d-flex align-items-center h-100 px-3">
+                                    <div>
+                                        <h3 class="text-center">Lorem Ipsum</h3>
+                                        <p class="text-center">Et hanc quidem praeter oppida multa duae civitates
+                                            exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam
+                                            Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut
+                                            rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat
+                                            admodum pauca. </p>
+                                    </div>
+                                </div><!-- End: content -->
+                                <!-- Start: footer -->
+                                <div class="footer-imagia w-100 text-secondary position-absolute text-center py-2">
+                                    <!-- Start: icons -->
+                                    <div class="social-imagia text-center"><a class="m-2" href="#"><i
+                                                class="fa fa-facebook"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-linkedin"></i></a><a class="m-2" href="#"><i
+                                                class="fa fa-twitter"></i></a></div><!-- End: icons -->
+                                </div><!-- End: footer -->
+                            </div><!-- End: back -->
+                        </div><!-- End: card -->
+                    </div><!-- End: card container -->
+                </div>
+            </div>
+        </div>
+    </section><!-- End: ♣ Team Rotating Cards BS4 ♣ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

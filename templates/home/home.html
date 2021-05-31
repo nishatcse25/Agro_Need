@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Agro Need | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'customer/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'home/homestyle.css' %}">
+    <link rel="stylesheet" href="{% static 'home/homeallstyle.css' %}">
+</head>
+
+<body style="background-image: linear-gradient(to bottom, #05660b, #418710, #73a814, #a7c91a, #e0e924);">
+    <!-- Start: sticky dark top nav with dropdown -->
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="background: linear-gradient(rgb(21,95,2), rgb(241,232,14));width: 100%;height: 93px;">
+        <div class="container">
+            <div><a class="navbar-brand" href="#"><span><img src="{% static 'customer/agroneedlogo.png' %}" style="width: 200px;"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}"><i class="fa fa-user-circle" style="height: 1px;"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'customerregistration' %}"><i class="fa fa-user-circle"></i>Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'sellerregistration' %}"><i class="fa fa-user-circle"></i>Seller</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}"><i class="fa fa-user-secret"></i>About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: sticky dark top nav with dropdown -->
+
+    <header>
+
+        <!-- for carousel section -->
+        <section class="container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row d-flex align-items-center p-4">
+                        <div class="col-md-7">
+                            <h1 style="color: #05660B; font-size: 100px; font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif">Agro <span style="color: #E0E924;">Need</span></h1>
+                            <p style="font-size: 20px; font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif"">It is a dummy e-commerce website. It is based of online farming business.<br>
+                             and it is only one webpage design</p>
+                        </div>
+                    <div class="col-md-5">
+                         <img src="{% static 'home/first section picture.gif' %}" class="a-block w-100" alt="...">
+                    </div>
+                    </div>
+                 </div>
+             </div>
+          </div>
+        </section>
+    </header>
+    <!-- for grid section -->
+    <main class="container">
+      <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="d-flex m-2 p-2 border rounded-3 shadow p-3 mb-5 bg-white rounded">
+                        <img style="width: 78px;" src="{% static 'home/side1.png' %}" alt="">
+                      <div class="ms-3 mt-2">
+                        <h3>You can buy product & service</h3>
+                        <p>Everybody need many product or service for agriculture .</p>
+                      </div>
+                    </div>
+                    <div class="d-flex m-2 p-2 border rounded-3 shadow p-3 mb-5 bg-white rounded">
+                        <img style="width: 78px;" src="{% static 'home/side 2.png' %}" alt="">
+                    <div class="ms-3 mt-2">
+                        <h3>You can sell product & service</h3>
+                        <p>One of the many reasons you can sell
+                        with peace of mind.</p>
+                    </div>
+                    </div>
+                    <div class="d-flex m-2 p-2 border rounded-3 shadow p-3 mb-5 bg-white rounded">
+                        <img style="width: 78px;" src="{% static 'home/side 3.png' %}" alt="">
+                    <div class="ms-3 mt-2">
+                        <h3>You can consult </h3>
+                        <p>They are here to help you. That's quite
+                            literally what we pay them for.</p>
+                    </div>
+                    </div>
+            </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
+            <img style="width:100%;;"src="{% static 'home/rightside.gif' %}" alt="">
+        </div>
+        </div>
+    </div>
+    </section>
+          <!-- for casual backpack section -->
+           <!-- for product section -->
+    <section class=" mt-5">
+        <h3 class="mb-5">Product <br></h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- one -->
+            {% for products in allProducts %}
+            <div class="col">
+
+                <div class="card h-100 shadow p-3 mb-5 bg-white rounded">
+{#                   <img src="{{ products.product_picture }}" class="card-img-top" alt="...">#}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ products.productName }}</h5>
+                        <p class="card-text">Seller :{{ products.sellerId }}</p>
+                        <p class="card-text">{{ products.productDetails }}</p>
+                    </div>
+                    <div class="cardfooter d-flex justify-content-between">
+                        <h3 style="color: #76C27E;">৳{{ products.productPrice }}</h3>
+{#                        <button type="button" class="btn btn-primary "><i class="fas fa-shopping-cart"></i> BUY NOW#}
+{#                        </button>#}
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+            {#                <div class="col">#}
+            {#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+            {#                    <img src="{% static 'home/casual2.jpg' %}" class="card-img-top" alt="...">#}
+            {#                    <div class="card-body">#}
+            {#                      <h5 class="card-title">School backpack</h5>#}
+            {#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+            {#                        printing and typesetting industry.</p>#}
+            {#                    </div>#}
+            {#                    <div class="cardfooter d-flex justify-content-between">#}
+            {#                        <h3 style="color: #76C27E;">$234</h3>#}
+            {#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+            {#                    </div>#}
+            {#                  </div>#}
+            {#                </div>#}
+            {#                <div class="col">#}
+            {#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+            {#                    <img src="{% static 'home/casual3.jpg' %}" class="card-img-top" alt="...">#}
+            {#                    <div class="card-body">#}
+            {#                      <h5 class="card-title">CityLite Security Backpack </h5>#}
+            {#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+            {#                        printing and typesetting industry.</p>#}
+            {#                    </div>#}
+            {#                    <div class="cardfooter d-flex justify-content-between">#}
+            {#                        <h3 style="color: #76C27E;">$234</h3>#}
+            {#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+            {#                    </div>#}
+            {#                  </div>#}
+            {#                </div>#}
+            {##}
+            {##}
+            {##}
+            {#                 <div class="col">#}
+            {#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+            {#                    <img src="{% static 'home/casual2.jpg' %}" class="card-img-top" alt="...">#}
+            {#                    <div class="card-body">#}
+            {#                      <h5 class="card-title">School backpack</h5>#}
+            {#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+            {#                        printing and typesetting industry.</p>#}
+            {#                    </div>#}
+            {#                    <div class="cardfooter d-flex justify-content-between">#}
+            {#                        <h3 style="color: #76C27E;">$234</h3>#}
+            {#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+            {#                    </div>#}
+            {#                  </div>#}
+            {#                </div>#}
+            {#                <div class="col">#}
+            {#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+            {#                    <img src="{% static 'home/casual3.jpg' %}" class="card-img-top" alt="...">#}
+            {#                    <div class="card-body">#}
+            {#                      <h5 class="card-title">CityLite Security Backpack </h5>#}
+            {#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+            {#                        printing and typesetting industry.</p>#}
+            {#                    </div>#}
+            {#                    <div class="cardfooter d-flex justify-content-between">#}
+            {#                        <h3 style="color: #76C27E;">$234</h3>#}
+            {#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+            {#                    </div>#}
+            {#                  </div>#}
+            {#                </div>#}
+        </div>
+    </section>
+          <!-- for travel backpack section-->
+{#        <section class=" mt-5">#}
+{#            <h3 class="mb-5">Service</h3>#}
+{#            <div class="row row-cols-1 row-cols-md-3 g-4">#}
+{#                <div class="col">#}
+{#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+{#                    <img src="{% static 'home/travel1.jpg' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                      <h5 class="card-title">Tractor rent</h5>#}
+{#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+{#                        printing and typesetting industry.</p>#}
+{#                    </div>#}
+{#                    <div class="cardfooter d-flex justify-content-between">#}
+{#                      <h3 style="color: #76C27E;">$234</h3>#}
+{#                      <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+{#                    <img src="{% static 'home/travel2.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                      <h5 class="card-title">Worker rent</h5>#}
+{#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+{#                        printing and typesetting industry.</p>#}
+{#                    </div>#}
+{#                    <div class="cardfooter d-flex justify-content-between">#}
+{#                        <h3 style="color: #76C27E;">$234</h3>#}
+{#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                  <div class="card h-100 shadow p-3 mb-5 bg-white rounded">#}
+{#                    <img src="{% static 'home/travel3.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                      <h5 class="card-title">Consult with Doctor</h5>#}
+{#                      <p class="card-text">Lorem Ipsum is simply dummy text of the#}
+{#                        printing and typesetting industry.</p>#}
+{#                    </div>#}
+{#                    <div class="cardfooter d-flex justify-content-between">#}
+{#                        <h3 style="color: #76C27E;">$234</h3>#}
+{#                        <button type="button" class="btn btn-primary "> <i class="fas fa-shopping-cart"></i> BUY NOW </button>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#        </section>#}
+        <!-- For contect section -->
+
+    </main>
+
+    <footer>
+        <h6 class="footer mt-5 mb-4">Copyright © 2021 </h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

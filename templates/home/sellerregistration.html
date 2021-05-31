@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seller Registration</title>
+
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'seller/registration.css' %}">
+
+</head>
+
+<body style="background-image: linear-gradient(to bottom, #045318, #25721d, #46911e, #6bb11a, #94d10a);" >
+
+<div>
+     <button class="btn btn--alpha"><span><a href="{% url 'sellersignup' %}">Seller Sign Up</a></span></button>
+        <button class="btn btn--gamma"><span><a href="{% url 'sellerlogin' %}">Seller Log In</a></span></button>
+</div>
+      <br>
+<div>
+    <button class="btn btn--beta"><span><a href="{% url 'home' %}">Back</a></span></button>
+</div>
+
+
+</body>
+</html>
